@@ -4,6 +4,7 @@ from search_engine.SearchEngineBase import main, SearchEngineBase
 class SimpleEngine(SearchEngineBase):
     def __init__(self):
         super(SimpleEngine, self).__init__()
+        # 初始化一个字典，key文件名，value文件内容
         self.__id_to_texts = {}
 
     def process_corpus(self, id, text):
